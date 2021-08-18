@@ -151,6 +151,19 @@ body {
     margin-right: auto;
 }
 
+button {
+    background: #5F7A61;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #7FC8A9;
+}
+
 
 /** ACTION CONTAINER **/
 
