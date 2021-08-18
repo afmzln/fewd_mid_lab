@@ -17,3 +17,19 @@
  * 1) Make the responsive menu work!
  * 2) Implement a modal window - "Sign up now" CTA when someone clicks the 'Sign Up' button
  */
+
+/***EASIEST*/
+
+// Change the title of the page to "We're the CAT People"
+
+let title = document.querySelector("#heroC")
+
+title.innerHTML = "<h1>We're the CAT People</h1><h3>Book trusted, local pet sitters and walkers who will care cat like you would</h3><button class=btn>Search</button>"
+
+
+// 3) When someone clicks the "Book your next Rover sitter" button, change the text of the button to say "Thanks"
+
+function mDown(obj) {
+    obj.style.backgroundColor = "#5F7A61";
+    obj.innerHTML = "Thank You";
+}
