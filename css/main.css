@@ -12,8 +12,354 @@
  * Blue for hovered links: #033641
  */
 
+
 /* Globals */
+
 body {
-  font-family: 'Cabin', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.rover nav>a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+    header #bars {
+        display: none;
+    }
+    @media (max-width: 500px) {
+        header #bars {
+            display: block;
+        }
+        header nav {
+            display: none;
+        }
+    }
+}
+
+
+/** HERO CONTAINER **/
+
+@media only screen and (max-width: 1400px) {
+    button.btn2 {
+        display: none;
+    }
+    @media (max-width: 500px) {
+        #hr_cont .hero_content {
+            background-color: antiquewhite;
+            border: 1px solid;
+            border-radius: 8px;
+            position: absolute;
+            left: 70px;
+            top: 30%;
+            width: 70%;
+            padding: 10px;
+        }
+        button:last-child {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #CA8A8B;
+            width: 60%;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+        button.btn {
+            display: none;
+        }
+        .hero_content h1 {
+            display: none;
+        }
+    }
+}
+
+.hero_container {
+    position: relative;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero_content {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    width: 40%;
+}
+
+.hero_content h3 {
+    text-align: justify;
+}
+
+.btn {
+    background-color: #CA8A8B;
+    border: 1px solid;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: #C1AC95;
+}
+
+
+/** FACTS CONTAINER **/
+
+@media (max-width: 500px) {
+    .facts_container>div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .facts2 p:last-child {
+        display: none;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.grid_2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.facts_container h2 {
+    text-align: center;
+}
+
+.facts_header {
+    background-color: #C9E4C5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid;
+    padding-bottom: 30px;
+}
+
+.box button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/** ACTION CONTAINER **/
+
+@media (max-width: 500px) {
+    .action {
+        position: relative;
+        background-image: url("https://www.rover.com/blog/wp-content/uploads/2018/11/17-07-rover-2.jpg");
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+    }
+    #ac .action_content {
+        background-color: #FDD2BF;
+        position: absolute;
+        padding: 10px;
+        left: 30px;
+        top: -30px;
+        width: 70%;
+    }
+    #ac hr {
+        position: absolute;
+        left: 10px;
+        border: 2px solid #B61919;
+        border-radius: 5px;
+        width: 50px;
+    }
+}
+
+.action {
+    position: relative;
+    background-image: url("https://www.rover.com/blog/wp-content/uploads/2018/11/17-07-rover-2.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.action_content {
+    background-color: azure;
+    position: absolute;
+    padding: 10px;
+    width: 98.4%;
+}
+
+.action_content:last-child a {
+    text-decoration: none;
+}
+
+hr {
+    position: absolute;
+    left: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 90px;
+}
+
+
+/** ROVER LAST CONTAINER **/
+
+@media (max-width: 500px) {
+    .rover_last>div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.rover_last h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid_3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rover_last img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/** JAVASCRIPT CLASS**/
+
+:root {
+    --modal-duration: 1s;
+    --modal-color: #B5CDA3;
+}
+
+.button {
+    background: #5F7A61;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #7FC8A9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 20%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+@media (max-width: 500px) {
+    .modal-content {
+        margin: 60% auto;
+        width: 60%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        animation-name: modalopen;
+        animation-duration: var(--modal-duration);
+    }
+    .modal-header {
+        background: var(--modal-color);
+        padding: 15px;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: relative;
+    }
+    .modal-body {
+        height: 100%;
+        padding: 100px;
+        background: #fff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: center;
+    }
+    .facts2 p:first-child {
+        display: block;
+    }
+}
+
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
