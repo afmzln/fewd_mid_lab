@@ -23,7 +23,6 @@
 // Change the title of the page to "We're the CAT People"
 
 let title = document.querySelector("#heroC")
-
 title.innerHTML = "<h1>We're the CAT People</h1><h3>Book trusted, local pet sitters and walkers who will care cat like you would</h3><button class=btn>Search</button>"
 
 
