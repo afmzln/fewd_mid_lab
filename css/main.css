@@ -170,13 +170,26 @@ div a:hover {
 
 /** FACTS CONTAINER **/
 
-@media (max-width: 500px) {
-    .facts_container>div {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .facts2 p:last-child {
+@media only screen and (max-width: 1400px) {
+    #factsImage {
         display: none;
+    }
+    @media (max-width: 500px) {
+        .facts_container>div {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .facts2 p:last-child {
+            display: none;
+        }
+        #factsImage {
+            display: block;
+        }
+        .factFlex {
+            display: flex;
+            padding-left: 10px;
+            gap: 15px;
+        }
     }
 }
 
