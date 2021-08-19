@@ -79,7 +79,7 @@ div a:hover {
         button#bars {
             display: block;
         }
-        header nav {
+        header a {
             display: none;
         }
         #mobile_menu a {
@@ -187,11 +187,13 @@ div a:hover {
         }
         .factFlex {
             display: flex;
-            padding-left: 10px;
-            gap: 15px;
+            padding-left: 5px;
+            padding-right: 30px;
+            gap: 10px;
         }
-        .facts_header img {
-            margin-top: 20px;
+        img {
+            padding-top: 10px;
+            margin-top: 0px;
             margin-right: 10px;
         }
     }
@@ -215,6 +217,11 @@ div a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.facts_header img {
+    margin-top: 12px;
+    margin-right: 10px;
 }
 
 .box {
