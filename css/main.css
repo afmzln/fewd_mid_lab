@@ -22,8 +22,10 @@ body {
     padding: 14px 16px;
 }
 
-.rover a:hover {
+div a:hover {
     background-color: #CA8A8B;
+    transform: scale(1.4);
+    text-shadow: none;
 }
 
 
