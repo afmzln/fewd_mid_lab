@@ -14,7 +14,7 @@
     <header class="container">
         <div class=" rover flex justify">
             <div class=" flex justify">
-                <img src="img/logo.png" alt="rover" height="50">
+                <img src="img/logo.png" alt="rover" height="50" id="newImg">
                 <nav>
                     <a href="#"> Search Sites</a>
                     <a href="#"> Become a Sitter</a>
@@ -27,10 +27,24 @@
                 <a href="#"> Help</a>
             </nav>
 
-            <div id="bars">
+            <button id="bars">
                 <i class="fa fa-bars" style="font-size: 30px"></i>
+            </button>
+        </div>
+
+
+        <!-------- HEADER MOBILE VIEW------------>
+        <div id="mobile_menu" class="rov">
+            <div class="rover_c">
+                <span class="close">&times;</span>
+                <a href="#"> Search Sites</a>
+                <a href="#"> Become a Sitter</a>
+                <a href="#"> Our Services</a>
+                <a href="#"> Sign Up</a>
+                <a href="#"> Sign In</a>
             </div>
         </div>
+
     </header>
     <!-------- HERO CONTAINER------------>
     <div id="hr_cont">
@@ -140,7 +154,8 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+    </script>
 </body>
 
 </html>

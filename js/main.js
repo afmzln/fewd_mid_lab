@@ -25,10 +25,58 @@
 let title = document.querySelector("#heroC")
 title.innerHTML = "<h1>We're the CAT People</h1><h3>Book trusted, local pet sitters and walkers who will care cat like you would</h3><button class=btn>Search</button>"
 
+let im = document.querySelector("#newImg");
+im.src = "img/cat.jpg";
+im.style.width = "80px"
+im.style.height = "50px"
+im.style.padding = "10px"
 
-// 3) When someone clicks the "Book your next Rover sitter" button, change the text of the button to say "Thanks"
+
+//Replace the call to action button background color with "red"
+let buttonCol = document.querySelector(".btn")
+buttonCol.addEventListener('click', () => buttonCol.style.backgroundColor = 'red')
+
+//Find another image and replace the header (try unsplash.com, get familiar with searching for images)
+// document.querySelector("#imBg").addEventListener("click", function() {
+//     //callback functions
+//     let bgImg = document.querySelector(".hero_container")
+//     bgImg.style.backgroundImage = "url('https://uk.catinaflat.com/static/imgs/share-3b2aa7f0.jpg')"
+// })
+
+//  When someone clicks the "Book your next Rover sitter" button, change the text of the button to say "Thanks"
 
 function mDown(obj) {
     obj.style.backgroundColor = "#5F7A61";
     obj.innerHTML = "Thank You";
+}
+
+
+
+
+
+// Get DOM Elements NAV BAR
+const modal = document.querySelector('#mobile_menu');
+const modalBtn = document.querySelector('#bars');
+const closeBtn = document.querySelector('.close');
+
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+    modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
 }

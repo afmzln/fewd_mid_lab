@@ -16,22 +16,79 @@ body {
     width: 90%;
 }
 
-.rover nav>a {
+.rover a {
     text-decoration: none;
     margin-right: 10px;
     color: black;
+    padding: 14px 16px;
 }
+
+.rover a:hover {
+    background-color: #CA8A8B;
+}
+
+
+/*MOBILE VIEW*/
+
+.rov {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.rover_c {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 20%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/**MEDIA HEADER**/
 
 @media only screen and (max-width: 1400px) {
     header #bars {
         display: none;
     }
     @media (max-width: 500px) {
-        header #bars {
+        button#bars {
             display: block;
         }
         header nav {
             display: none;
+        }
+        #mobile_menu a {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
         }
     }
 }
@@ -54,7 +111,7 @@ body {
             width: 70%;
             padding: 10px;
         }
-        button:last-child {
+        #heroC button:last-child {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -151,7 +208,7 @@ body {
     margin-right: auto;
 }
 
-button {
+.button {
     background: #5F7A61;
     padding: 1em 2em;
     color: #fff;
