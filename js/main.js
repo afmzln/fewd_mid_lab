@@ -34,7 +34,9 @@ im.style.padding = "10px"
 
 //Replace the call to action button background color with "red"
 let buttonCol = document.querySelector(".btn")
-buttonCol.addEventListener('click', () => buttonCol.style.backgroundColor = 'red')
+buttonCol.addEventListener('click', () =>
+    buttonCol.style.backgroundColor = 'red'
+)
 
 //Find another image and replace the header (try unsplash.com, get familiar with searching for images)
 // document.querySelector("#imBg").addEventListener("click", function() {
