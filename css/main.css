@@ -101,6 +101,7 @@ body {
     }
     @media (max-width: 500px) {
         #hr_cont .hero_content {
+            color: #000;
             background-color: antiquewhite;
             border: 1px solid;
             border-radius: 8px;
@@ -144,6 +145,7 @@ body {
     left: 10px;
     top: 30%;
     width: 40%;
+    color: white;
 }
 
 .hero_content h3 {
@@ -235,6 +237,7 @@ body {
     }
     #ac .action_content {
         background-color: #FDD2BF;
+        border-radius: 8px;
         position: absolute;
         padding: 10px;
         left: 30px;
@@ -356,4 +359,41 @@ hr {
 .popup.active .popContent {
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
+}
+
+#animated-background {
+    animation: bgfade 15s infinite;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    position: relative;
+}
+
+@keyframes bgfade {
+    0% {
+        background-image: url("../img/hero.jpg")
+    }
+    50% {
+        background-image: url(https://images.unsplash.com/photo-1537727365640-d9b9cbeeac34?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    }
+    75% {
+        background-image: url(https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    }
+    100% {
+        background-image: url(https://images.unsplash.com/photo-1501743029101-21a00d6a3fb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    }
+}
+
+
+/****** add a background overlay *******/
+
+#animated-background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.3;
 }
