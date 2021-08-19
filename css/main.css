@@ -190,6 +190,10 @@ div a:hover {
             padding-left: 10px;
             gap: 15px;
         }
+        .facts_header img {
+            margin-top: 20px;
+            margin-right: 10px;
+        }
     }
 }
 
