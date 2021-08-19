@@ -22,7 +22,16 @@
                 </nav>
             </div>
             <nav>
-                <a href="#"> Sign Up</a>
+                <a href="#" onclick="togglePopup()"> Sign Up</a>
+                <!--JAVASCRIPT POP UP-->
+                <div id="popup-1" class="popup">
+                    <div class="overlay"></div>
+                    <div class="popContent">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <p>Sign Up Now</p>
+                    </div>
+                </div>
+
                 <a href="#"> Sign In</a>
                 <a href="#"> Help</a>
             </nav>

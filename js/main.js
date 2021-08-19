@@ -50,8 +50,10 @@ function mDown(obj) {
     obj.innerHTML = "Thank You";
 }
 
-
-
+//JS SIGN UP
+function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+}
 
 
 // Get DOM Elements NAV BAR
